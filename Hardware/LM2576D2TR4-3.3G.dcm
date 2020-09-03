@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LM2576D2TR4-3.3G
+D 3.3v Buck 3A Max
+K Buck 3.3
+F https://www.mouser.com/datasheet/2/308/LM2576_D-1810688.pdf
+$ENDCMP
+#
+#End Doc Library

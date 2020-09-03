@@ -1,0 +1,400 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MRDT_Connectors:AndersonPP Conn1
+U 1 1 5F4DACC4
+P 2575 3500
+F 0 "Conn1" H 2783 3887 60  0000 C CNN
+F 1 "AndersonPP" H 2783 3781 60  0000 C CNN
+F 2 "" H 2425 2950 60  0001 C CNN
+F 3 "" H 2425 2950 60  0001 C CNN
+	1    2575 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MRDT_Connectors:AndersonPP Conn1
+U 2 1 5F4DACCA
+P 2575 3025
+F 0 "Conn1" H 2783 3412 60  0000 C CNN
+F 1 "AndersonPP" H 2783 3306 60  0000 C CNN
+F 2 "" H 2425 2475 60  0001 C CNN
+F 3 "" H 2425 2475 60  0001 C CNN
+	2    2575 3025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 5F4DACD0
+P 4975 2925
+F 0 "D5" H 5025 2725 50  0000 R CNN
+F 1 "LED" H 5050 2825 50  0000 R CNN
+F 2 "" H 4975 2925 50  0001 C CNN
+F 3 "~" H 4975 2925 50  0001 C CNN
+	1    4975 2925
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR0104
+U 1 1 5F4DACD6
+P 4350 2600
+F 0 "#PWR0104" H 4350 2450 50  0001 C CNN
+F 1 "+12V" H 4365 2773 50  0000 C CNN
+F 2 "" H 4350 2600 50  0001 C CNN
+F 3 "" H 4350 2600 50  0001 C CNN
+	1    4350 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2975 3400 3225 3400
+Wire Wire Line
+	3675 3400 3675 3550
+$Comp
+L power:GND #PWR0105
+U 1 1 5F4DACDE
+P 3675 3550
+F 0 "#PWR0105" H 3675 3300 50  0001 C CNN
+F 1 "GND" H 3680 3377 50  0000 C CNN
+F 2 "" H 3675 3550 50  0001 C CNN
+F 3 "" H 3675 3550 50  0001 C CNN
+	1    3675 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead FB1
+U 1 1 5F4DACE5
+P 4000 2925
+F 0 "FB1" V 3726 2925 50  0000 C CNN
+F 1 "Ferrite_Bead" V 3817 2925 50  0000 C CNN
+F 2 "" V 3930 2925 50  0001 C CNN
+F 3 "~" H 4000 2925 50  0001 C CNN
+	1    4000 2925
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4150 2925 4350 2925
+$Comp
+L Device:R R1
+U 1 1 5F4DACEC
+P 5450 2925
+F 0 "R1" V 5243 2925 50  0000 C CNN
+F 1 "1k" V 5334 2925 50  0000 C CNN
+F 2 "" V 5380 2925 50  0001 C CNN
+F 3 "~" H 5450 2925 50  0001 C CNN
+	1    5450 2925
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 2600 4350 2925
+Connection ~ 4350 2925
+Wire Wire Line
+	5125 2925 5300 2925
+Text Notes 4875 3075 0    50   ~ 0
+Green
+$Comp
+L MRDT_Connectors:Test_Point J2
+U 1 1 5F4DACF6
+P 4650 3025
+F 0 "J2" H 4700 3425 60  0000 R CNN
+F 1 "Test_Point" H 4850 3300 60  0000 R CNN
+F 2 "" H 4650 2975 60  0001 C CNN
+F 3 "" H 4650 2975 60  0001 C CNN
+	1    4650 3025
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4650 3025 4650 2925
+Wire Wire Line
+	4350 2925 4650 2925
+Connection ~ 4650 2925
+Wire Wire Line
+	4650 2925 4825 2925
+Wire Wire Line
+	5600 2925 5875 2925
+Wire Wire Line
+	5875 2925 5875 3075
+$Comp
+L power:GND #PWR0106
+U 1 1 5F4DAD02
+P 5875 3075
+F 0 "#PWR0106" H 5875 2825 50  0001 C CNN
+F 1 "GND" H 5880 2902 50  0000 C CNN
+F 2 "" H 5875 3075 50  0001 C CNN
+F 3 "" H 5875 3075 50  0001 C CNN
+	1    5875 3075
+	1    0    0    -1  
+$EndComp
+$Comp
+L MRDT_Connectors:Test_Point J1
+U 1 1 5F4DAD08
+P 3225 3475
+F 0 "J1" H 3275 3875 60  0000 R CNN
+F 1 "Test_Point" H 3425 3750 60  0000 R CNN
+F 2 "" H 3225 3425 60  0001 C CNN
+F 3 "" H 3225 3425 60  0001 C CNN
+	1    3225 3475
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3225 3475 3225 3400
+Connection ~ 3225 3400
+Wire Wire Line
+	3225 3400 3675 3400
+$Comp
+L LM2576D2TR4-3.3G:LM2576D2TR4-3.3G U?
+U 1 1 5F4DFCC7
+P 6850 4250
+AR Path="/5F4DFCC7" Ref="U?"  Part="1" 
+AR Path="/5F525D93/5F4DFCC7" Ref="U?"  Part="1" 
+F 0 "U?" H 6850 4675 50  0000 C CNN
+F 1 "LM2576D2TR4-3.3G" H 6850 4584 50  0000 C CNN
+F 2 "" H 6850 4700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/LM2576_D-1810688.pdf" H 6850 4700 50  0001 C CNN
+	1    6850 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5F4DFCCD
+P 8950 3950
+AR Path="/5F4DFCCD" Ref="D?"  Part="1" 
+AR Path="/5F525D93/5F4DFCCD" Ref="D?"  Part="1" 
+F 0 "D?" V 8989 3833 50  0000 R CNN
+F 1 "LED" V 8898 3833 50  0000 R CNN
+F 2 "" H 8950 3950 50  0001 C CNN
+F 3 "~" H 8950 3950 50  0001 C CNN
+	1    8950 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5F4DFCD3
+P 7650 3400
+AR Path="/5F4DFCD3" Ref="#PWR?"  Part="1" 
+AR Path="/5F525D93/5F4DFCD3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7650 3250 50  0001 C CNN
+F 1 "+12V" H 7665 3573 50  0000 C CNN
+F 2 "" H 7650 3400 50  0001 C CNN
+F 3 "" H 7650 3400 50  0001 C CNN
+	1    7650 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F4DFCD9
+P 8375 3625
+AR Path="/5F4DFCD9" Ref="#PWR?"  Part="1" 
+AR Path="/5F525D93/5F4DFCD9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8375 3475 50  0001 C CNN
+F 1 "+3.3V" H 8390 3798 50  0000 C CNN
+F 2 "" H 8375 3625 50  0001 C CNN
+F 3 "" H 8375 3625 50  0001 C CNN
+	1    8375 3625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4050 6150 4050
+Wire Wire Line
+	6150 4050 6150 4200
+$Comp
+L power:GND #PWR?
+U 1 1 5F4DFCE1
+P 6150 4550
+AR Path="/5F4DFCE1" Ref="#PWR?"  Part="1" 
+AR Path="/5F525D93/5F4DFCE1" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6150 4300 50  0001 C CNN
+F 1 "GND" H 6155 4377 50  0000 C CNN
+F 2 "" H 6150 4550 50  0001 C CNN
+F 3 "" H 6150 4550 50  0001 C CNN
+	1    6150 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4350 6150 4350
+Connection ~ 6150 4350
+Wire Wire Line
+	6150 4350 6150 4550
+Wire Wire Line
+	6350 4200 6150 4200
+Connection ~ 6150 4200
+Wire Wire Line
+	6150 4200 6150 4350
+$Comp
+L Device:C C?
+U 1 1 5F4DFCEE
+P 7850 3725
+AR Path="/5F4DFCEE" Ref="C?"  Part="1" 
+AR Path="/5F525D93/5F4DFCEE" Ref="C?"  Part="1" 
+F 0 "C?" V 7598 3725 50  0000 C CNN
+F 1 "C" V 7689 3725 50  0000 C CNN
+F 2 "" H 7888 3575 50  0001 C CNN
+F 3 "~" H 7850 3725 50  0001 C CNN
+	1    7850 3725
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7350 4050 7650 4050
+$Comp
+L power:GND #PWR?
+U 1 1 5F4E9D23
+P 7850 3950
+AR Path="/5F4E9D23" Ref="#PWR?"  Part="1" 
+AR Path="/5F525D93/5F4E9D23" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7850 3700 50  0001 C CNN
+F 1 "GND" H 7855 3777 50  0000 C CNN
+F 2 "" H 7850 3950 50  0001 C CNN
+F 3 "" H 7850 3950 50  0001 C CNN
+	1    7850 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 3950 7850 3875
+Wire Wire Line
+	7650 3500 7650 4050
+Wire Wire Line
+	7850 3575 7850 3500
+Wire Wire Line
+	7850 3500 7650 3500
+Wire Wire Line
+	7650 3500 7650 3400
+Connection ~ 7650 3500
+Wire Wire Line
+	8375 4200 8375 3725
+Wire Wire Line
+	8375 3725 8550 3725
+Wire Wire Line
+	8550 3725 8550 3800
+Connection ~ 8375 3725
+Wire Wire Line
+	8375 3725 8375 3625
+$Comp
+L power:GND #PWR?
+U 1 1 5F4EDC62
+P 8750 4700
+AR Path="/5F4EDC62" Ref="#PWR?"  Part="1" 
+AR Path="/5F525D93/5F4EDC62" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8750 4450 50  0001 C CNN
+F 1 "GND" H 8755 4527 50  0000 C CNN
+F 2 "" H 8750 4700 50  0001 C CNN
+F 3 "" H 8750 4700 50  0001 C CNN
+	1    8750 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F4EE2A2
+P 8550 3950
+AR Path="/5F4EE2A2" Ref="C?"  Part="1" 
+AR Path="/5F525D93/5F4EE2A2" Ref="C?"  Part="1" 
+F 0 "C?" V 8298 3950 50  0000 C CNN
+F 1 "C" V 8389 3950 50  0000 C CNN
+F 2 "" H 8588 3800 50  0001 C CNN
+F 3 "~" H 8550 3950 50  0001 C CNN
+	1    8550 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7350 4200 7975 4200
+$Comp
+L Device:L L?
+U 1 1 5F4F1020
+P 8125 4200
+F 0 "L?" V 8315 4200 50  0000 C CNN
+F 1 "L" V 8224 4200 50  0000 C CNN
+F 2 "" H 8125 4200 50  0001 C CNN
+F 3 "~" H 8125 4200 50  0001 C CNN
+	1    8125 4200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8275 4200 8375 4200
+Wire Wire Line
+	8375 4350 8375 4200
+Wire Wire Line
+	7350 4350 8375 4350
+Connection ~ 8375 4200
+$Comp
+L MRDT_Connectors:Test_Point J?
+U 1 1 5F4F3C46
+P 9425 3950
+F 0 "J?" H 9475 4350 60  0000 R CNN
+F 1 "Test_Point" H 9625 4225 60  0000 R CNN
+F 2 "" H 9425 3900 60  0001 C CNN
+F 3 "" H 9425 3900 60  0001 C CNN
+	1    9425 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F4F5D7D
+P 8950 4375
+F 0 "R?" H 8825 4425 50  0000 C CNN
+F 1 "330" H 8825 4325 50  0000 C CNN
+F 2 "" V 8880 4375 50  0001 C CNN
+F 3 "~" H 8950 4375 50  0001 C CNN
+	1    8950 4375
+	-1   0    0    1   
+$EndComp
+Connection ~ 8550 3725
+Wire Wire Line
+	8950 3725 8950 3800
+Wire Wire Line
+	8950 4625 8950 4525
+Wire Wire Line
+	8550 4100 8550 4625
+Wire Wire Line
+	8950 4225 8950 4100
+Wire Wire Line
+	8750 4700 8750 4625
+Wire Wire Line
+	8550 4625 8750 4625
+Wire Wire Line
+	8550 3725 8950 3725
+Connection ~ 8750 4625
+Wire Wire Line
+	8750 4625 8950 4625
+Wire Wire Line
+	9425 3725 8950 3725
+Wire Wire Line
+	9425 3725 9425 3950
+Connection ~ 8950 3725
+$Comp
+L Device:D_Zener D?
+U 1 1 5F508C41
+P 3675 3175
+F 0 "D?" V 3629 3254 50  0000 L CNN
+F 1 "D_Zener" V 3720 3254 50  0000 L CNN
+F 2 "" H 3675 3175 50  0001 C CNN
+F 3 "~" H 3675 3175 50  0001 C CNN
+	1    3675 3175
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3675 2925 3675 3025
+Wire Wire Line
+	2975 2925 3675 2925
+Wire Wire Line
+	3675 2925 3850 2925
+Connection ~ 3675 2925
+Wire Wire Line
+	3675 3325 3675 3400
+Connection ~ 3675 3400
+Text Notes 4625 2150 2    100  ~ 20
+Power Input
+Text Notes 8325 3075 2    100  ~ 20
+3.3V Regulator
+Text Notes 9050 4125 0    50   ~ 0
+Green
+$EndSCHEMATC
