@@ -347,4 +347,11 @@ F 3 "https://www.mouser.com/datasheet/2/308/LM2576_D-1810688.pdf" H 6175 4875 50
 	1    6175 4425
 	1    0    0    -1  
 $EndComp
+Text Notes 9575 6975 2    200  ~ 40
+Sheet 1: Power 
+Text GLabel 2700 3100 0    50   Input ~ 0
+Power_Input
+Wire Wire Line
+	2700 3100 3000 3100
+Connection ~ 3000 3100
 $EndSCHEMATC
