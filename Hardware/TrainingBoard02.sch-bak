@@ -373,4 +373,6 @@ Wire Wire Line
 Connection ~ 8175 4100
 Wire Wire Line
 	7900 4100 8175 4100
+Text Notes 9675 6975 2    200  ~ 40
+Sheet 2: Buttons
 $EndSCHEMATC
