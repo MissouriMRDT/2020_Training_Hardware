@@ -182,4 +182,6 @@ Wire Wire Line
 	6850 2875 6975 2875
 Wire Wire Line
 	6850 2975 6975 2975
+Text Notes 10200 6975 2    200  ~ 40
+Sheet 3: Connectors
 $EndSCHEMATC
