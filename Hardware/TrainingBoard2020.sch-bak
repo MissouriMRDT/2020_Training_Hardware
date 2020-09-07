@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 1 2
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -13,266 +13,20 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L LM2576D2TR4-3.3G:LM2576D2TR4-3.3G U?
-U 1 1 5F4D44A4
-P 7825 2325
-F 0 "U?" H 7825 2750 50  0000 C CNN
-F 1 "LM2576D2TR4-3.3G" H 7825 2659 50  0000 C CNN
-F 2 "" H 7825 2775 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/308/LM2576_D-1810688.pdf" H 7825 2775 50  0001 C CNN
-	1    7825 2325
-	1    0    0    -1  
-$EndComp
-$Comp
-L MRDT_Connectors:AndersonPP Conn?
-U 1 1 5F4D62B4
-P 2700 3375
-F 0 "Conn?" H 2908 3762 60  0000 C CNN
-F 1 "AndersonPP" H 2908 3656 60  0000 C CNN
-F 2 "" H 2550 2825 60  0001 C CNN
-F 3 "" H 2550 2825 60  0001 C CNN
-	1    2700 3375
-	1    0    0    -1  
-$EndComp
-$Comp
-L MRDT_Connectors:AndersonPP Conn?
-U 2 1 5F4D707B
-P 2700 2900
-F 0 "Conn?" H 2908 3287 60  0000 C CNN
-F 1 "AndersonPP" H 2908 3181 60  0000 C CNN
-F 2 "" H 2550 2350 60  0001 C CNN
-F 3 "" H 2550 2350 60  0001 C CNN
-	2    2700 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5F4DE2F6
-P 4875 4875
-F 0 "D?" V 4914 4758 50  0000 R CNN
-F 1 "LED" V 4823 4758 50  0000 R CNN
-F 2 "" H 4875 4875 50  0001 C CNN
-F 3 "~" H 4875 4875 50  0001 C CNN
-	1    4875 4875
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5F4DFEEF
-P 5175 5075
-F 0 "D?" V 5214 4958 50  0000 R CNN
-F 1 "LED" V 5123 4958 50  0000 R CNN
-F 2 "" H 5175 5075 50  0001 C CNN
-F 3 "~" H 5175 5075 50  0001 C CNN
-	1    5175 5075
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5F4E0199
-P 5450 4975
-F 0 "D?" V 5489 4858 50  0000 R CNN
-F 1 "LED" V 5398 4858 50  0000 R CNN
-F 2 "" H 5450 4975 50  0001 C CNN
-F 3 "~" H 5450 4975 50  0001 C CNN
-	1    5450 4975
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5F4E050C
-P 4425 2800
-F 0 "D?" H 4475 2600 50  0000 R CNN
-F 1 "LED" H 4500 2700 50  0000 R CNN
-F 2 "" H 4425 2800 50  0001 C CNN
-F 3 "~" H 4425 2800 50  0001 C CNN
-	1    4425 2800
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5F4E092E
-P 9275 2650
-F 0 "D?" V 9314 2533 50  0000 R CNN
-F 1 "LED" V 9223 2533 50  0000 R CNN
-F 2 "" H 9275 2650 50  0001 C CNN
-F 3 "~" H 9275 2650 50  0001 C CNN
-	1    9275 2650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+12V #PWR?
-U 1 1 5F4E7A4C
-P 3800 2475
-F 0 "#PWR?" H 3800 2325 50  0001 C CNN
-F 1 "+12V" H 3815 2648 50  0000 C CNN
-F 2 "" H 3800 2475 50  0001 C CNN
-F 3 "" H 3800 2475 50  0001 C CNN
-	1    3800 2475
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3100 3275 3350 3275
-Wire Wire Line
-	3800 3275 3800 3425
-$Comp
-L power:GND #PWR?
-U 1 1 5F4E826C
-P 3800 3425
-F 0 "#PWR?" H 3800 3175 50  0001 C CNN
-F 1 "GND" H 3805 3252 50  0000 C CNN
-F 2 "" H 3800 3425 50  0001 C CNN
-F 3 "" H 3800 3425 50  0001 C CNN
-	1    3800 3425
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3100 2800 3300 2800
-$Comp
-L Device:Ferrite_Bead FB?
-U 1 1 5F4EC104
-P 3450 2800
-F 0 "FB?" V 3176 2800 50  0000 C CNN
-F 1 "Ferrite_Bead" V 3267 2800 50  0000 C CNN
-F 2 "" V 3380 2800 50  0001 C CNN
-F 3 "~" H 3450 2800 50  0001 C CNN
-	1    3450 2800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3600 2800 3800 2800
-$Comp
-L Device:R R?
-U 1 1 5F4EE24A
-P 4900 2800
-F 0 "R?" V 4693 2800 50  0000 C CNN
-F 1 "1k" V 4784 2800 50  0000 C CNN
-F 2 "" V 4830 2800 50  0001 C CNN
-F 3 "~" H 4900 2800 50  0001 C CNN
-	1    4900 2800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3800 2475 3800 2800
-Connection ~ 3800 2800
-Wire Wire Line
-	4575 2800 4750 2800
-Text Notes 4325 2950 0    50   ~ 0
-Green
-$Comp
-L MRDT_Connectors:Test_Point J?
-U 1 1 5F4F15D1
-P 4100 2900
-F 0 "J?" H 4150 3300 60  0000 R CNN
-F 1 "Test_Point" H 4300 3175 60  0000 R CNN
-F 2 "" H 4100 2850 60  0001 C CNN
-F 3 "" H 4100 2850 60  0001 C CNN
-	1    4100 2900
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4100 2900 4100 2800
-Wire Wire Line
-	3800 2800 4100 2800
-Connection ~ 4100 2800
-Wire Wire Line
-	4100 2800 4275 2800
-Wire Wire Line
-	5050 2800 5325 2800
-Wire Wire Line
-	5325 2800 5325 2950
-$Comp
-L power:GND #PWR?
-U 1 1 5F4F3922
-P 5325 2950
-F 0 "#PWR?" H 5325 2700 50  0001 C CNN
-F 1 "GND" H 5330 2777 50  0000 C CNN
-F 2 "" H 5325 2950 50  0001 C CNN
-F 3 "" H 5325 2950 50  0001 C CNN
-	1    5325 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L MRDT_Connectors:Test_Point J?
-U 1 1 5F4F3EDE
-P 3350 3350
-F 0 "J?" H 3400 3750 60  0000 R CNN
-F 1 "Test_Point" H 3550 3625 60  0000 R CNN
-F 2 "" H 3350 3300 60  0001 C CNN
-F 3 "" H 3350 3300 60  0001 C CNN
-	1    3350 3350
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3350 3350 3350 3275
-Connection ~ 3350 3275
-Wire Wire Line
-	3350 3275 3800 3275
-$Comp
-L power:+12V #PWR?
-U 1 1 5F4F4CCD
-P 8850 2000
-F 0 "#PWR?" H 8850 1850 50  0001 C CNN
-F 1 "+12V" H 8865 2173 50  0000 C CNN
-F 2 "" H 8850 2000 50  0001 C CNN
-F 3 "" H 8850 2000 50  0001 C CNN
-	1    8850 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5F4F7A5C
-P 9425 2325
-F 0 "#PWR?" H 9425 2175 50  0001 C CNN
-F 1 "+3.3V" H 9440 2498 50  0000 C CNN
-F 2 "" H 9425 2325 50  0001 C CNN
-F 3 "" H 9425 2325 50  0001 C CNN
-	1    9425 2325
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7325 2125 7125 2125
-Wire Wire Line
-	7125 2125 7125 2275
-$Comp
-L power:GND #PWR?
-U 1 1 5F5047BE
-P 7125 2625
-F 0 "#PWR?" H 7125 2375 50  0001 C CNN
-F 1 "GND" H 7130 2452 50  0000 C CNN
-F 2 "" H 7125 2625 50  0001 C CNN
-F 3 "" H 7125 2625 50  0001 C CNN
-	1    7125 2625
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7325 2425 7125 2425
-Connection ~ 7125 2425
-Wire Wire Line
-	7125 2425 7125 2625
-Wire Wire Line
-	7325 2275 7125 2275
-Connection ~ 7125 2275
-Wire Wire Line
-	7125 2275 7125 2425
-Wire Wire Line
-	8700 2125 8850 2125
-$Comp
-L Device:C C?
-U 1 1 5F507901
-P 8650 2625
-F 0 "C?" V 8398 2625 50  0000 C CNN
-F 1 "C" V 8489 2625 50  0000 C CNN
-F 2 "" H 8688 2475 50  0001 C CNN
-F 3 "~" H 8650 2625 50  0001 C CNN
-	1    8650 2625
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8850 2000 8850 2125
 $Sheet
-S 2325 4125 1675 1275
+S 4400 3175 1825 1600
+U 5F4E3D8B
+F0 "Buttons" 50
+F1 "TrainingBoard02.sch" 50
+$EndSheet
+$Sheet
+S 6550 3175 1875 1600
+U 5F5029F1
+F0 "Connectors" 50
+F1 "TrainingBoard03.sch" 50
+$EndSheet
+$Sheet
+S 2225 3175 1800 1600
 U 5F525D93
 F0 "Power" 50
 F1 "TrainingBoard01.sch" 50
