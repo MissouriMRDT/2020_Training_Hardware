@@ -16,34 +16,12 @@ $EndDescr
 Text Notes 7150 6950 0    157  ~ 31
 Sheet 03: Connectors
 $Comp
-L MRDT_Connectors:AndersonPP Conn1
-U 1 1 5F5675BC
-P 3400 4150
-F 0 "Conn1" H 3608 4537 60  0000 C CNN
-F 1 "AndersonPP" H 3608 4431 60  0000 C CNN
-F 2 "" H 3250 3600 60  0001 C CNN
-F 3 "" H 3250 3600 60  0001 C CNN
-	1    3400 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L MRDT_Connectors:AndersonPP Conn1
-U 2 1 5F567B9B
-P 3400 3450
-F 0 "Conn1" H 3608 3837 60  0000 C CNN
-F 1 "AndersonPP" H 3608 3731 60  0000 C CNN
-F 2 "" H 3250 2900 60  0001 C CNN
-F 3 "" H 3250 2900 60  0001 C CNN
-	2    3400 3450
-	1    0    0    -1  
-$EndComp
-$Comp
 L MRDT_Connectors:Molex_SL_05 Conn2
 U 1 1 5F568AF6
 P 7500 3400
 F 0 "Conn2" H 7628 3708 60  0000 L CNN
 F 1 "Molex_SL_05" H 7628 3602 60  0000 L CNN
-F 2 "" H 7500 3400 60  0001 C CNN
+F 2 "MRDT_Connectors:MOLEX_SL_05_Horizontal" H 7500 3400 60  0001 C CNN
 F 3 "" H 7500 3400 60  0001 C CNN
 	1    7500 3400
 	1    0    0    -1  
@@ -54,30 +32,11 @@ U 1 1 5F569D3E
 P 7500 4550
 F 0 "Conn3" H 7628 4858 60  0000 L CNN
 F 1 "Molex_SL_05" H 7628 4752 60  0000 L CNN
-F 2 "" H 7500 4550 60  0001 C CNN
+F 2 "MRDT_Connectors:MOLEX_SL_05_Horizontal" H 7500 4550 60  0001 C CNN
 F 3 "" H 7500 4550 60  0001 C CNN
 	1    7500 4550
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR09
-U 1 1 5F56BEB0
-P 4000 4200
-F 0 "#PWR09" H 4000 3950 50  0001 C CNN
-F 1 "GND" H 4005 4027 50  0000 C CNN
-F 2 "" H 4000 4200 50  0001 C CNN
-F 3 "" H 4000 4200 50  0001 C CNN
-	1    4000 4200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3800 4050 4000 4050
-Wire Wire Line
-	4000 4050 4000 4200
-Wire Wire Line
-	3800 3350 4350 3350
-Text GLabel 4350 3350 2    49   Output ~ 0
-Power_Input
 $Comp
 L power:GND #PWR021
 U 1 1 5F59FE05
