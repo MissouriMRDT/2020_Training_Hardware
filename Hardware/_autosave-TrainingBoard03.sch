@@ -1,0 +1,125 @@
+EESchema Schematic File Version 4
+LIBS:TrainingBoard2020-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MRDT_Connectors:Molex_SL_05 Conn3
+U 1 1 5F582D81
+P 6275 4175
+F 0 "Conn3" H 6403 4483 60  0000 L CNN
+F 1 "Molex_SL_05" H 6403 4377 60  0000 L CNN
+F 2 "" H 6275 4175 60  0001 C CNN
+F 3 "" H 6275 4175 60  0001 C CNN
+	1    6275 4175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6075 4125 5900 4125
+Wire Wire Line
+	5900 4125 5900 4300
+$Comp
+L power:GND #PWR014
+U 1 1 5F583AFF
+P 5900 4300
+F 0 "#PWR014" H 5900 4050 50  0001 C CNN
+F 1 "GND" H 5905 4127 50  0000 C CNN
+F 2 "" H 5900 4300 50  0001 C CNN
+F 3 "" H 5900 4300 50  0001 C CNN
+	1    5900 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5525 4025 5525 3825
+$Comp
+L power:+3.3V #PWR012
+U 1 1 5F583CFB
+P 5525 3825
+F 0 "#PWR012" H 5525 3675 50  0001 C CNN
+F 1 "+3.3V" H 5540 3998 50  0000 C CNN
+F 2 "" H 5525 3825 50  0001 C CNN
+F 3 "" H 5525 3825 50  0001 C CNN
+	1    5525 3825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5525 4025 6075 4025
+Text GLabel 5950 3925 0    50   Input ~ 0
+IND_3
+Text GLabel 5950 3825 0    50   Input ~ 0
+IND_2
+Text GLabel 5950 3725 0    50   Input ~ 0
+IND_1
+Wire Wire Line
+	5950 3725 6075 3725
+Wire Wire Line
+	5950 3825 6075 3825
+Wire Wire Line
+	5950 3925 6075 3925
+$Comp
+L MRDT_Connectors:Molex_SL_05 Conn2
+U 1 1 5F587554
+P 6275 3000
+F 0 "Conn2" H 6403 3308 60  0000 L CNN
+F 1 "Molex_SL_05" H 6403 3202 60  0000 L CNN
+F 2 "" H 6275 3000 60  0001 C CNN
+F 3 "" H 6275 3000 60  0001 C CNN
+	1    6275 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6075 2950 5900 2950
+Wire Wire Line
+	5900 2950 5900 3125
+$Comp
+L power:GND #PWR013
+U 1 1 5F58755C
+P 5900 3125
+F 0 "#PWR013" H 5900 2875 50  0001 C CNN
+F 1 "GND" H 5905 2952 50  0000 C CNN
+F 2 "" H 5900 3125 50  0001 C CNN
+F 3 "" H 5900 3125 50  0001 C CNN
+	1    5900 3125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5525 2850 5525 2650
+$Comp
+L power:+3.3V #PWR011
+U 1 1 5F587563
+P 5525 2650
+F 0 "#PWR011" H 5525 2500 50  0001 C CNN
+F 1 "+3.3V" H 5540 2823 50  0000 C CNN
+F 2 "" H 5525 2650 50  0001 C CNN
+F 3 "" H 5525 2650 50  0001 C CNN
+	1    5525 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5525 2850 6075 2850
+Text GLabel 5950 2750 0    50   Input ~ 0
+IND_3
+Text GLabel 5950 2650 0    50   Input ~ 0
+IND_2
+Text GLabel 5950 2550 0    50   Input ~ 0
+IND_1
+Wire Wire Line
+	5950 2550 6075 2550
+Wire Wire Line
+	5950 2650 6075 2650
+Wire Wire Line
+	5950 2750 6075 2750
+Text Notes 10200 6975 2    200  ~ 40
+Sheet 3: Connectors
+$EndSCHEMATC
