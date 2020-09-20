@@ -14,21 +14,21 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 4400 3175 1825 1600
-U 5F4E3D8B
+S 1600 1500 2700 2300
+U 5F66BAE6
+F0 "Power" 50
+F1 "TrainingBoard01.sch" 50
+$EndSheet
+$Sheet
+S 5450 1550 2850 2400
+U 5F66BE89
 F0 "Buttons" 50
 F1 "TrainingBoard02.sch" 50
 $EndSheet
 $Sheet
-S 6550 3175 1875 1600
-U 5F5029F1
+S 1400 4550 3150 2750
+U 5F66BF4A
 F0 "Connectors" 50
 F1 "TrainingBoard03.sch" 50
-$EndSheet
-$Sheet
-S 2225 3175 1800 1600
-U 5F525D93
-F0 "Power" 50
-F1 "TrainingBoard01.sch" 50
 $EndSheet
 $EndSCHEMATC
