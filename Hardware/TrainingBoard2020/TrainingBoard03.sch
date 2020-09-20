@@ -1,0 +1,153 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7100 6950 0    157  ~ 0
+Sheet 03 Connectors
+$Comp
+L MRDT_Connectors:AndersonPP Conn1
+U 1 1 5F67CCBE
+P 1150 2300
+F 0 "Conn1" H 1358 2687 60  0000 C CNN
+F 1 "AndersonPP" H 1358 2581 60  0000 C CNN
+F 2 "" H 1000 1750 60  0001 C CNN
+F 3 "" H 1000 1750 60  0001 C CNN
+	1    1150 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MRDT_Connectors:AndersonPP Conn1
+U 2 1 5F67D626
+P 1100 1500
+F 0 "Conn1" H 1308 1887 60  0000 C CNN
+F 1 "AndersonPP" H 1308 1781 60  0000 C CNN
+F 2 "" H 950 950 60  0001 C CNN
+F 3 "" H 950 950 60  0001 C CNN
+	2    1100 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MRDT_Connectors:Molex_SL_05 Conn2
+U 1 1 5F67F9D9
+P 5950 1700
+F 0 "Conn2" H 6078 2008 60  0000 L CNN
+F 1 "Molex_SL_05" H 6078 1902 60  0000 L CNN
+F 2 "" H 5950 1700 60  0001 C CNN
+F 3 "" H 5950 1700 60  0001 C CNN
+	1    5950 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR020
+U 1 1 5F681BA1
+P 1750 2400
+F 0 "#PWR020" H 1750 2150 50  0001 C CNN
+F 1 "GND" H 1755 2227 50  0000 C CNN
+F 2 "" H 1750 2400 50  0001 C CNN
+F 3 "" H 1750 2400 50  0001 C CNN
+	1    1750 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2200 1750 2200
+Wire Wire Line
+	1750 2200 1750 2400
+Wire Wire Line
+	1500 1400 2150 1400
+Text GLabel 2150 1400 2    157  Output ~ 0
+Power_Input
+Wire Wire Line
+	5750 1250 5550 1250
+Wire Wire Line
+	5550 1250 5550 1100
+$Comp
+L power:+3.3V #PWR023
+U 1 1 5F6C4265
+P 5550 1100
+F 0 "#PWR023" H 5550 950 50  0001 C CNN
+F 1 "+3.3V" H 5565 1273 50  0000 C CNN
+F 2 "" H 5550 1100 50  0001 C CNN
+F 3 "" H 5550 1100 50  0001 C CNN
+	1    5550 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 1350 5300 1350
+Wire Wire Line
+	5300 1350 5300 1500
+$Comp
+L power:GND #PWR021
+U 1 1 5F6C54C7
+P 5300 1500
+F 0 "#PWR021" H 5300 1250 50  0001 C CNN
+F 1 "GND" H 5305 1327 50  0000 C CNN
+F 2 "" H 5300 1500 50  0001 C CNN
+F 3 "" H 5300 1500 50  0001 C CNN
+	1    5300 1500
+	1    0    0    -1  
+$EndComp
+Text GLabel 5750 1450 0    39   Input ~ 0
+Ind_1
+Text GLabel 5750 1550 0    39   Input ~ 0
+Ind_2
+Text GLabel 5750 1650 0    39   Input ~ 0
+Ind_3
+$Comp
+L MRDT_Connectors:Molex_SL_05 Conn3
+U 1 1 5F6C8F5C
+P 5950 2650
+F 0 "Conn3" H 6078 2958 60  0000 L CNN
+F 1 "Molex_SL_05" H 6078 2852 60  0000 L CNN
+F 2 "" H 5950 2650 60  0001 C CNN
+F 3 "" H 5950 2650 60  0001 C CNN
+	1    5950 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2200 5550 2200
+Wire Wire Line
+	5550 2200 5550 2050
+$Comp
+L power:+3.3V #PWR024
+U 1 1 5F6C8F64
+P 5550 2050
+F 0 "#PWR024" H 5550 1900 50  0001 C CNN
+F 1 "+3.3V" H 5565 2223 50  0000 C CNN
+F 2 "" H 5550 2050 50  0001 C CNN
+F 3 "" H 5550 2050 50  0001 C CNN
+	1    5550 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2300 5300 2300
+Wire Wire Line
+	5300 2300 5300 2450
+$Comp
+L power:GND #PWR022
+U 1 1 5F6C8F6C
+P 5300 2450
+F 0 "#PWR022" H 5300 2200 50  0001 C CNN
+F 1 "GND" H 5305 2277 50  0000 C CNN
+F 2 "" H 5300 2450 50  0001 C CNN
+F 3 "" H 5300 2450 50  0001 C CNN
+	1    5300 2450
+	1    0    0    -1  
+$EndComp
+Text GLabel 5750 2400 0    39   Input ~ 0
+Ind_1
+Text GLabel 5750 2500 0    39   Input ~ 0
+Ind_2
+Text GLabel 5750 2600 0    39   Input ~ 0
+Ind_3
+$EndSCHEMATC
