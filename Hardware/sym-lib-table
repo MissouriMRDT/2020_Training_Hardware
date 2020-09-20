@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name TrainingBoard2020-rescue)(type Legacy)(uri ${KIPRJMOD}/TrainingBoard2020-rescue.lib)(options "")(descr ""))
-)

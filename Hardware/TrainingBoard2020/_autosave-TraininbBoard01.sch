@@ -1,0 +1,376 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7200 6950 0    157  ~ 0
+Sheet 01 Power
+Text GLabel 2900 1900 0    157  Input ~ 0
+Power_Input
+Wire Wire Line
+	2900 1900 3500 1900
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 5F685143
+P 4150 1900
+F 0 "FB?" V 3876 1900 50  0000 C CNN
+F 1 "Ferrite_Bead" V 3967 1900 50  0000 C CNN
+F 2 "" V 4080 1900 50  0001 C CNN
+F 3 "~" H 4150 1900 50  0001 C CNN
+	1    4150 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D?
+U 1 1 5F685BAD
+P 3500 2050
+F 0 "D?" V 3454 2130 50  0000 L CNN
+F 1 "D_Zener" V 3545 2130 50  0000 L CNN
+F 2 "" H 3500 2050 50  0001 C CNN
+F 3 "~" H 3500 2050 50  0001 C CNN
+	1    3500 2050
+	0    1    1    0   
+$EndComp
+Connection ~ 3500 1900
+Wire Wire Line
+	3500 1900 4000 1900
+Wire Wire Line
+	3500 2200 3500 2500
+$Comp
+L power:GND #PWR?
+U 1 1 5F686F50
+P 3500 2500
+F 0 "#PWR?" H 3500 2250 50  0001 C CNN
+F 1 "GND" H 3505 2327 50  0000 C CNN
+F 2 "" H 3500 2500 50  0001 C CNN
+F 3 "" H 3500 2500 50  0001 C CNN
+	1    3500 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1900 4950 1900
+Wire Wire Line
+	4950 1900 4950 1600
+$Comp
+L power:+12V #PWR?
+U 1 1 5F6875BA
+P 4950 1600
+F 0 "#PWR?" H 4950 1450 50  0001 C CNN
+F 1 "+12V" H 4965 1773 50  0000 C CNN
+F 2 "" H 4950 1600 50  0001 C CNN
+F 3 "" H 4950 1600 50  0001 C CNN
+	1    4950 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 1900 5400 1900
+Connection ~ 4950 1900
+$Comp
+L Device:LED D?
+U 1 1 5F687E2D
+P 5550 1900
+F 0 "D?" H 5543 1645 50  0000 C CNN
+F 1 "LED" H 5543 1736 50  0000 C CNN
+F 2 "" H 5550 1900 50  0001 C CNN
+F 3 "~" H 5550 1900 50  0001 C CNN
+	1    5550 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F688767
+P 6100 1900
+F 0 "R?" V 5893 1900 50  0000 C CNN
+F 1 "1k" V 5984 1900 50  0000 C CNN
+F 2 "" V 6030 1900 50  0001 C CNN
+F 3 "~" H 6100 1900 50  0001 C CNN
+	1    6100 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F689446
+P 6500 2150
+F 0 "#PWR?" H 6500 1900 50  0001 C CNN
+F 1 "GND" H 6505 1977 50  0000 C CNN
+F 2 "" H 6500 2150 50  0001 C CNN
+F 3 "" H 6500 2150 50  0001 C CNN
+	1    6500 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 1900 5950 1900
+Wire Wire Line
+	6250 1900 6500 1900
+Wire Wire Line
+	6500 1900 6500 2150
+Text Notes 5400 2100 0    79   ~ 0
+Green
+$Comp
+L power:GND #PWR?
+U 1 1 5F68B343
+P 5400 3950
+F 0 "#PWR?" H 5400 3700 50  0001 C CNN
+F 1 "GND" H 5405 3777 50  0000 C CNN
+F 2 "" H 5400 3950 50  0001 C CNN
+F 3 "" H 5400 3950 50  0001 C CNN
+	1    5400 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3500 5400 3650
+Connection ~ 5400 3650
+Wire Wire Line
+	5400 3650 5400 3800
+$Comp
+L MRDT_Devices:LM2576D2TR4 U?
+U 1 1 5F689B52
+P 6500 3700
+F 0 "U?" H 6500 4125 50  0000 C CNN
+F 1 "LM2576D2TR4" H 6500 4034 50  0000 C CNN
+F 2 "" H 6500 4150 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/LM2576_D-1810688.pdf" H 6500 4150 50  0001 C CNN
+	1    6500 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3800 5400 3800
+Wire Wire Line
+	5400 3650 6000 3650
+Wire Wire Line
+	5400 3500 6000 3500
+Wire Wire Line
+	5400 3800 5400 3950
+Connection ~ 5400 3800
+Connection ~ 5400 3950
+Wire Wire Line
+	5400 3950 5400 4000
+$Comp
+L power:+12V #PWR?
+U 1 1 5F68EBB6
+P 7150 3150
+F 0 "#PWR?" H 7150 3000 50  0001 C CNN
+F 1 "+12V" H 7165 3323 50  0000 C CNN
+F 2 "" H 7150 3150 50  0001 C CNN
+F 3 "" H 7150 3150 50  0001 C CNN
+	1    7150 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F68ED1D
+P 7350 3300
+F 0 "C?" V 7098 3300 50  0000 C CNN
+F 1 "100uF" V 7189 3300 50  0000 C CNN
+F 2 "" H 7388 3150 50  0001 C CNN
+F 3 "~" H 7350 3300 50  0001 C CNN
+	1    7350 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F68F84F
+P 7900 3300
+F 0 "#PWR?" H 7900 3050 50  0001 C CNN
+F 1 "GND" H 7905 3127 50  0000 C CNN
+F 2 "" H 7900 3300 50  0001 C CNN
+F 3 "" H 7900 3300 50  0001 C CNN
+	1    7900 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 3300 7900 3350
+$Comp
+L Device:D_Zener D?
+U 1 1 5F691AD7
+P 7250 3850
+F 0 "D?" V 7204 3930 50  0000 L CNN
+F 1 "D_Zener" V 7295 3930 50  0000 L CNN
+F 2 "" H 7250 3850 50  0001 C CNN
+F 3 "~" H 7250 3850 50  0001 C CNN
+	1    7250 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 3650 7250 3650
+Wire Wire Line
+	7250 3700 7250 3650
+Connection ~ 7250 3650
+Wire Wire Line
+	7250 3650 7400 3650
+$Comp
+L Device:L L?
+U 1 1 5F692502
+P 7550 3650
+F 0 "L?" V 7369 3650 50  0000 C CNN
+F 1 "100uH" V 7460 3650 50  0000 C CNN
+F 2 "" H 7550 3650 50  0001 C CNN
+F 3 "~" H 7550 3650 50  0001 C CNN
+	1    7550 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 3500 7150 3500
+Wire Wire Line
+	7150 3500 7150 3300
+Wire Wire Line
+	7150 3300 7200 3300
+Connection ~ 7150 3300
+Wire Wire Line
+	7150 3300 7150 3150
+Wire Wire Line
+	7500 3300 7900 3300
+Connection ~ 7900 3300
+$Comp
+L power:GND #PWR?
+U 1 1 5F69676C
+P 7250 4100
+F 0 "#PWR?" H 7250 3850 50  0001 C CNN
+F 1 "GND" H 7255 3927 50  0000 C CNN
+F 2 "" H 7250 4100 50  0001 C CNN
+F 3 "" H 7250 4100 50  0001 C CNN
+	1    7250 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 4000 7250 4100
+Wire Wire Line
+	7000 3800 7000 4400
+Wire Wire Line
+	7000 4400 7750 4400
+Wire Wire Line
+	7750 4400 7750 3650
+Wire Wire Line
+	7750 3650 7700 3650
+Wire Wire Line
+	7750 3650 8100 3650
+Connection ~ 7750 3650
+$Comp
+L Device:C C?
+U 1 1 5F697ED0
+P 8100 3900
+F 0 "C?" H 8215 3946 50  0000 L CNN
+F 1 "1000uF" H 8215 3855 50  0000 L CNN
+F 2 "" H 8138 3750 50  0001 C CNN
+F 3 "~" H 8100 3900 50  0001 C CNN
+	1    8100 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 3650 8100 3750
+Connection ~ 8100 3650
+$Comp
+L power:GND #PWR?
+U 1 1 5F699E4F
+P 8100 4200
+F 0 "#PWR?" H 8100 3950 50  0001 C CNN
+F 1 "GND" H 8105 4027 50  0000 C CNN
+F 2 "" H 8100 4200 50  0001 C CNN
+F 3 "" H 8100 4200 50  0001 C CNN
+	1    8100 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 4050 8100 4200
+Wire Wire Line
+	8550 3650 8550 3300
+Wire Wire Line
+	8100 3650 8550 3650
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F69AE49
+P 8550 3300
+F 0 "#PWR?" H 8550 3150 50  0001 C CNN
+F 1 "+3.3V" H 8565 3473 50  0000 C CNN
+F 2 "" H 8550 3300 50  0001 C CNN
+F 3 "" H 8550 3300 50  0001 C CNN
+	1    8550 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 3650 8850 3650
+$Comp
+L Device:LED D?
+U 1 1 5F69DC2F
+P 9150 3650
+F 0 "D?" H 9143 3395 50  0000 C CNN
+F 1 "LED" H 9143 3486 50  0000 C CNN
+F 2 "" H 9150 3650 50  0001 C CNN
+F 3 "~" H 9150 3650 50  0001 C CNN
+	1    9150 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F69DC35
+P 9700 3650
+F 0 "R?" V 9493 3650 50  0000 C CNN
+F 1 "330" V 9584 3650 50  0000 C CNN
+F 2 "" V 9630 3650 50  0001 C CNN
+F 3 "~" H 9700 3650 50  0001 C CNN
+	1    9700 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F69DC3B
+P 10100 3900
+F 0 "#PWR?" H 10100 3650 50  0001 C CNN
+F 1 "GND" H 10105 3727 50  0000 C CNN
+F 2 "" H 10100 3900 50  0001 C CNN
+F 3 "" H 10100 3900 50  0001 C CNN
+	1    10100 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 3650 9550 3650
+Wire Wire Line
+	9850 3650 10100 3650
+Wire Wire Line
+	10100 3650 10100 3900
+Text Notes 9000 3850 0    79   ~ 0
+Green
+$Comp
+L MRDT_Connectors:Test_Point J?
+U 1 1 5F69E5AD
+P 8850 3850
+F 0 "J?" H 8772 3889 60  0000 R CNN
+F 1 "Test_Point" H 8772 3995 60  0000 R CNN
+F 2 "" H 8850 3800 60  0001 C CNN
+F 3 "" H 8850 3800 60  0001 C CNN
+	1    8850 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8850 3850 8850 3650
+Connection ~ 8850 3650
+Wire Wire Line
+	8850 3650 9000 3650
+$Comp
+L MRDT_Connectors:Test_Point J?
+U 1 1 5F6A7562
+P 4550 2100
+F 0 "J?" H 4472 2139 60  0000 R CNN
+F 1 "Test_Point" H 4472 2245 60  0000 R CNN
+F 2 "" H 4550 2050 60  0001 C CNN
+F 3 "" H 4550 2050 60  0001 C CNN
+	1    4550 2100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4550 2100 4550 1900
+Text Notes 2600 1150 0    157  ~ 0
+Power Input
+Text Notes 7700 2850 0    79   ~ 0
+3.3v Converter
+$EndSCHEMATC
